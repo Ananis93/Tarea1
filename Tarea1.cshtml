@@ -1,0 +1,47 @@
+﻿
+using System;
+
+namespace Programacion3
+{
+	class Tarea1{
+		
+		public string nombre;
+		public string facebook;
+		public string telefono;
+		public string domicilio;
+		
+		public Tarea1(){
+			this.nombre = nombre;
+		}
+		
+		public void Capturar(){
+			Console.WriteL("Escribe tu Nombre:");
+			string nombre = Console.ReadLine();
+			Console.Write("Escribe tu Telefono:");
+			string telefono = Console.ReadLine();
+			Console.Write("Escribe tu Facebook:");
+			string facebook = Console.ReadLine();
+			Console.Write("Escribe tu Domicilio:");
+			string domicilio = Console.ReadLine();
+			Console.Clear();
+			Console.WriteLine("Ficha de Estudiante:");
+			Console.WriteLine("Nombre: " + nombre);
+			Console.WriteLine("Telefono: " + telefono);
+			Console.WriteLine("Facebook: " + facebook);
+			Console.WriteLine("Domicilio: " + domicilio);
+		}
+		
+		public void Mostrar(){
+			
+		}
+		
+		public static void Main(){
+			Tarea1 tarea1 = new Tarea1();
+			tarea1.Capturar();
+			Console.WriteLine("Presiona una Tecla para salir");
+			Console.ReadLine();
+		}
+		
+		
+	}
+}
